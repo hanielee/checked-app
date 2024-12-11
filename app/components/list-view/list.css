@@ -1,0 +1,107 @@
+/* Styles for the modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Styles for the modal container */
+  .modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  /* Styles for the modal header */
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the close button */
+  .modal-header button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #999;
+  }
+  
+  /* Styles for the modal content */
+  .modal-content {
+    line-height: 1.6;
+  }
+  
+  /* Styles for the image inside the modal */
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for links inside the modal */
+  .modal-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  /* Styles for links on hover */
+  .modal-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Add this CSS to your component or a global stylesheet */
+
+/* Style for the fixed container holding the buttons */
+.fixed-container2 {
+  position: fixed;
+  bottom: 50px; /* Adjust this value to set the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  z-index: 1000; /* Ensure the buttons appear above other content */
+}
+
+/* Style for the pagination buttons */
+.pagination-button {
+  padding: 8px 12px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  cursor: pointer;
+}
+
+/* Style for the active pagination button */
+.active {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.list-container {
+  max-height: 80vh; /* Set the maximum height as per your preference */
+  overflow-y: auto; /* Add a scroll bar when the content overflows */
+}
+
+/* Add the following style to ensure the pagination buttons are at the bottom */
+.fixed-container {
+  position: sticky;
+  bottom: 0;
+  padding: 8px;
+  background-color: white;
+}
